@@ -8,6 +8,170 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
+            --text: #0d1f33;
+            --text-light: #4d6a82;
+            --accent: #2b5f8a;
+            --bg: #dce5ed;
+            --white: #dce5ed;
+            --border: #b4c5d4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', serif;
+            font-weight: 400;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover { border-bottom-color: var(--accent); }
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav .links { display: flex; gap: 28px; }
+        nav .links a {
+            font-family: 'EB Garamond', serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        nav .links a:hover { color: var(--text); }
+        nav .links a.active { color: var(--text); border-bottom-color: var(--accent); }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 30px 80px;
+        }
+        .hero {
+            display: flex;
+            gap: 45px;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+        .hero-photo { flex-shrink: 0; }
+        .hero-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%;
+        }
+        .hero-text h1 {
+            font-family: 'EB Garamond', serif;
+            font-size: 34px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+        .hero-text .subtitle {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 18px;
+        }
+        .hero-text .bio {
+            font-size: 16px;
+            color: var(--text);
+            line-height: 1.8;
+        }
+        section { margin-bottom: 50px; }
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-light);
+            text-align: center;
+        }
+        @media (max-width: 650px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .hero-photo img { width: 160px; height: 160px; }
+            nav { flex-direction: column; gap: 12px; }
+            nav .links { gap: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="links">
+            <a href="index.html" class="active">About</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="contact.html">Contact</a>
+            <a href="CV_ChiaraPiaDAmbrosio.pdf" target="_blank">CV</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about">
+        <div class="hero">
+            <div class="hero-photo">
+                <img src="https://images.london.edu/hxo16fanegqh/4lCRXcbktKLLiA2wMC23P4/a1472644a047ce891666b844bca98167/chiara-PIA-512-386.jpg" alt="Chiara Pia D'Ambrosio">
+            </div>
+            <div class="hero-text">
+                <h1>Chiara Pia D'Ambrosio</h1>
+                <p class="subtitle">PhD Candidate in Strategy &amp; Entrepreneurship<br>London Business School</p>
+                <p class="bio">
+                    I study how organizations strategically use language and direct attention
+                    to navigate competing demands, with a particular interest in ESG communication.
+                    I work under the supervision of Professor D&oacute;nal Crilly.
+                </p>
+                <p class="bio" style="margin-top: 12px;">
+                    Prior to joining LBS, I worked as a research assistant at SDA Bocconi School
+                    of Management and as a financial controller at Luxottica Group. I hold a BSc
+                    in Finance and an MSc in Accounting, Financial Management and Control, both
+                    from Bocconi University.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2026 Chiara Pia D'Ambrosio
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiara Pia D'Ambrosio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
             --text: #1a1a1a;
             --text-light: #555;
             --accent: #2c3e6b;
