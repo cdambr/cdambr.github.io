@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chiara Pia D'Ambrosio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text: #0d1f33;
+            --text-light: #4d6a82;
+            --accent: #2b5f8a;
+            --bg: #dce5ed;
+            --white: #dce5ed;
+            --border: #b4c5d4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', serif;
+            font-weight: 400;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover { border-bottom-color: var(--accent); }
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav .links { display: flex; gap: 28px; }
+        nav .links a {
+            font-family: 'EB Garamond', serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        nav .links a:hover { color: var(--text); }
+        nav .links a.active { color: var(--text); border-bottom-color: var(--accent); }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 30px 80px;
+        }
+        section { margin-bottom: 50px; }
+        section h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .contact-item { font-size: 15px; }
+        .contact-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-light);
+            margin-bottom: 4px;
+        }
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-light);
+            text-align: center;
+        }
+        @media (max-width: 650px) {
+            nav { flex-direction: column; gap: 12px; }
+            nav .links { gap: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="links">
+            <a href="index.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="CV_ChiaraPiaDAmbrosio.pdf" target="_blank">CV</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <a href="mailto:cdambrosio@london.edu">cdambrosio@london.edu</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/chiara-pia-d-ambrosio-26679b91/" target="_blank">Profile</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-label">Google Scholar</div>
+                <a href="https://scholar.google.com/citations?user=vki_Qs4AAAAJ&hl=en" target="_blank">Profile</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2026 Chiara Pia D'Ambrosio
+</footer>
+
+</body>
+</html>
